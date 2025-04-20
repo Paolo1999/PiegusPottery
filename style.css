@@ -4,7 +4,7 @@ body{
     display: flex;
     margin: 15px;
 
-    .logo {
+    .background {
         width: 100%;
         flex: 1;
     }
@@ -21,8 +21,19 @@ body{
       }
   }
 
+  header {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+ 
+  .logo {
+    height: 100px;
+  }
+
   .social {
     display: flex;
+    flex: 1;
     gap: 8px;
     justify-content: center;
 
@@ -31,4 +42,5 @@ body{
         height:24px;
     }
   }
+}
 }
