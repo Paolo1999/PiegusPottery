@@ -43,4 +43,44 @@ body{
     }
   }
 }
+.workshops {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.workshops h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.workshops p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.workshops ul {
+  list-style: disc inside;
+  text-align: left;
+  margin: 0 auto 20px auto;
+  max-width: 600px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #e1a95f;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c88d40;
+}
 }
