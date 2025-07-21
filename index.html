@@ -1,35 +1,147 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Piegus Pottery</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="assets/fav.jpg">
-      </head>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piegus Pottery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/fav.jpg" />
+</head>
 <body>
-    <header>
-        <img class="logo" src="assets/logo.jpg">
-        <div class="social">
-            <a href="https://www.facebook.com/Piegus.Pottery/?locale=pl_PL" target="_blank"><img class="social-icon" src="assets/facebook-f-brands-solid.svg"></a>
-            <a href="https://www.instagram.com/piegus_pottery" target="_blank"><img class="social-icon" src="assets/instagram-brands.svg"></a>
-            <a href="https://pieguspottery.etsy.com" target="_blank"><img class="social-icon" src="assets/cart-shopping-solid.svg"></a>
+  <header>
+    <img class="logo" src="assets/logo.jpg" alt="Piegus Pottery Logo" />
+    <nav>
+      <a href="#o-nas" class="active">O nas</a>
+      <div class="dropdown">
+        <a href="#warsztaty">Warsztaty ▼</a>
+        <div class="dropdown-content">
+          <a href="#warsztaty-lepienie">Lepienie ręczne</a>
+          <a href="#warsztaty-szkliwienie">Szkliwienie</a>
+          <a href="#warsztaty-kolo">Koło garncarskie</a>
         </div>
-    </header>
-    <div class="main">
-        <img class="background" src="assets/background.jpg">
-        <section class="workshops">
-            <h2>Warsztaty Szkliwienia Ceramiki</h2>
-            <p>Zapraszamy dzieci i dorosłych na letnie warsztaty szkliwienia w Pracowni Patchwork we Wrocławiu! To doskonała okazja, aby nadać swoim glinianym dziełom wyjątkowe kolory i blask.</p>
-            <ul>
-                <li>Techniki: farby podszkliwne, zanurzanie, mieszanie szkliw</li>
-                <li>Dla dzieci (od 6 lat) i dorosłych</li>
-                <li>Czas trwania: 1 godzina – 90 zł, 2 godziny – 120 zł (oferta letnia)</li>
-            </ul>
-            <p>Gotowe prace po wypaleniu możesz zabrać do domu jako piękną pamiątkę.</p>
-            <a href="mailto:kontakt@pieguspottery.art" class="cta-button">Zapisz się!</a>
-        </section>
+      </div>
+      <a href="#wypaly">Wypały</a>
+      <a href="#galeria">Galeria zdjęć</a>
+      <a href="#oferta">Oferta pracowni</a>
+    </nav>
+    <div class="social">
+      <a href="https://www.facebook.com/Piegus.Pottery/?locale=pl_PL" target="_blank" aria-label="Facebook">
+        <img class="social-icon" src="assets/facebook-f-brands-solid.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/piegus_pottery" target="_blank" aria-label="Instagram">
+        <img class="social-icon" src="assets/instagram-brands.svg" alt="Instagram" />
+      </a>
+      <a href="https://pieguspottery.etsy.com" target="_blank" aria-label="Etsy">
+        <img class="social-icon" src="assets/cart-shopping-solid.svg" alt="Etsy" />
+      </a>
     </div>
+  </header>
+
+  <main>
+    <section id="o-nas" class="content-section">
+      <h2>O nas</h2>
+      <p>
+        Witamy w Piegus Pottery – miejscu, gdzie pasja do ceramiki łączy się z radością tworzenia. Nasza pracownia w sercu Wrocławia to przestrzeń dla każdego, kto chce odkryć magię gliny i stworzyć coś wyjątkowego.
+      </p>
+    </section>
+
+    <section id="warsztaty" class="content-section">
+      <h2>Warsztaty – Wakacyjne promocje lato 2025 ☀️</h2>
+
+      <section id="warsztaty-lepienie" class="sub-section">
+        <h3>🌞 Letni Program – Lepienie Ręczne</h3>
+        <p><strong>📍 ul. Komuny Paryskiej 55, Wrocław</strong></p>
+        <p>Wakacyjne warsztaty z gliną – twórczy relaks w samym sercu Wrocławia! Zapraszamy dzieci, młodzież i dorosłych na letni cykl zajęć z lepienia ręcznego.</p>
+        <ul>
+          <li>✅ Nauka technik ręcznych – wałkowanie, lepienie z płatów, formowanie z wałeczków, modelowanie.</li>
+          <li>✅ Kameralne grupy i indywidualne podejście.</li>
+          <li>✅ Chłodne wnętrze pracowni w upalne dni.</li>
+          <li>✅ Wszystkie materiały, narzędzia i wypały w cenie.</li>
+          <li>✅ Relaksująca atmosfera i pełna swoboda twórcza.</li>
+        </ul>
+        <p><strong>Letnie terminy 2025:</strong></p>
+        <ul>
+          <li>🗓️ Warsztaty jednorazowe – przez całe wakacje, pon-sob (po rezerwacji).</li>
+          <li>🗓️ Letni cykl (karnet) – 4 spotkania: 3 lepienia + 1 szkliwienia.</li>
+        </ul>
+        <p><strong>Letnie ceny specjalne:</strong></p>
+        <ul>
+          <li>Dla dzieci i młodzieży (4–17 lat) — Karnet: 390 zł (wcześniej 420 zł), Zajęcia: 100 zł (wcześniej 120 zł).</li>
+          <li>Zajęcia indywidualne — Karnet: 490 zł (wcześniej 590 zł), Zajęcia: 150 zł (wcześniej 170 zł).</li>
+          <li>Zajęcia grupowe (3–8 osób) — Karnet: 400 zł (wcześniej 440 zł), Zajęcia: 100 zł (wcześniej 120 zł).</li>
+        </ul>
+      </section>
+
+      <section id="warsztaty-szkliwienie" class="sub-section">
+        <h3>🌞 Letnie szkliwienie ceramiki</h3>
+        <p>
+          LETNIE SZKLIWIENIE CERAMIKI – PRACOWNIA PATCHWORK WROCŁAW 🌿<br><br>
+
+          Lato to najlepszy czas, by dodać kolorów nie tylko wakacjom, ale i swoim ceramicznym dziełom! Zapraszamy dzieci i dorosłych na letnie warsztaty szkliwienia w wyjątkowej, wakacyjnej cenie!<br><br>
+
+          <strong>Dla kogo?</strong><br>
+          ✨ Dla wszystkich, którzy uczestniczyli w zajęciach lepienia ręcznego lub na kole garncarskim i chcą nadać swoim pracom piękne, trwałe barwy.<br>
+          ✨ Dla dzieci od 6 roku życia i dorosłych – bez ograniczeń wiekowych!<br><br>
+
+          <strong>Co robimy?</strong><br>
+          Podczas zajęć poznasz różne techniki szkliwienia:<br>
+          🎨 malowanie farbami podszkliwnymi<br>
+          🎨 zanurzanie prac w szkliwie<br>
+          🎨 mieszanie szkliw i tworzenie własnych, niepowtarzalnych efektów<br><br>
+
+          Twoje prace po wypaleniu staną się wyjątkową, kolorową pamiątką!<br><br>
+
+          <strong>☀️ LETNIA PROMOCJA!</strong><br>
+          🕒 1 godzina – teraz tylko 90 zł (zamiast 120 zł)<br>
+          🕒 2 godziny – teraz tylko 120 zł (zamiast 150 zł)<br><br>
+
+          <strong>Gdzie?</strong><br>
+          Pracownia Patchwork – Wrocław<br><br>
+
+          Zapisz się już dziś, bo ilość miejsc jest ograniczona!<br>
+          👉 <a href="mailto:kontakt@pieguspottery.art">kontakt@pieguspottery.art</a><br><br>
+
+          Twórz, szkliw i baw się kolorami tego lata! 🌈✨
+        </p>
+      </section>
+
+      <section id="warsztaty-kolo" class="sub-section">
+        <h3>🌞 Koło garncarskie – Lato 2025</h3>
+        <p><strong>📍 ul. Komuny Paryskiej 55, Wrocław</strong></p>
+        <p>Zapraszamy na wyjątkowe, wakacyjne warsztaty z koła garncarskiego! Stwórz własne naczynia, poznaj tajniki garncarstwa i baw się gliną.</p>
+        <ul>
+          <li>✅ Karnety i ceny promocyjne dla dzieci, par, indywidualnych uczestników oraz kurs zaawansowany.</li>
+          <li>✅ Szczegóły cen i terminów znajdziesz w naszej ofercie.</li>
+        </ul>
+        <p><strong>Letnie ceny specjalne:</strong></p>
+        <ul>
+          <li>Dla dzieci (6–17 lat) — Karnet: 390 zł, Zajęcia: 100 zł.</li>
+          <li>Dla par — Karnet: 460 zł, Zajęcia: 120 zł.</li>
+          <li>Dla indywidualnych — Karnet: 560 zł, Zajęcia: 150 zł.</li>
+          <li>Zaawansowany kurs (6 zajęć) — 1100 zł.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="wypaly" class="content-section">
+      <h2>Wypały</h2>
+      <p>Informacje o terminach i sposobach wypałów ceramiki w naszej pracowni...</p>
+    </section>
+
+    <section id="galeria" class="content-section">
+      <h2>Galeria zdjęć</h2>
+      <p>Przykładowe prace i zdjęcia z warsztatów...</p>
+    </section>
+
+    <section id="oferta" class="content-section">
+      <h2>Oferta pracowni</h2>
+      <p>Opis oferty, sprzedaż ceramiki i inne usługi...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Piegus Pottery. Wszelkie prawa zastrzeżone.</p>
+  </footer>
 </body>
 </html>
-
-
