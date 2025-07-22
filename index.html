@@ -40,14 +40,17 @@
 
   <main>
     <section id="o-nas" class="content-section">
-      <h2>O nas</h2>
+      <div class="onas-bg-container">
+        <img src="assets/background.jpg" alt="Pracownia ceramiczna" class="onas-bg-img">
+        <div class="onas-bg-text">Pracownia ceramiczna Wrocław</div>
+      </div>
       <p>
         Witamy w Piegus Pottery – miejscu, gdzie pasja do ceramiki łączy się z radością tworzenia. Nasza pracownia w sercu Wrocławia to przestrzeń dla każdego, kto chce odkryć magię gliny i stworzyć coś wyjątkowego.
       </p>
     </section>
 
     <section id="warsztaty" class="content-section">
-      <h2>Warsztaty – Wakacyjne promocje lato 2025 ☀️</h2>
+      <h2>Warsztaty – Wakacyjne promocje lato 2025</h2>
 
       <section id="warsztaty-lepienie" class="sub-section">
         <h3>🌞 Letni Program – Lepienie Ręczne</h3>
@@ -129,9 +132,13 @@
       <p>Informacje o terminach i sposobach wypałów ceramiki w naszej pracowni...</p>
     </section>
 
-    <section id="galeria" class="content-section">
+    <section id="galeria" class="content-section fade-in">
       <h2>Galeria zdjęć</h2>
-      <p>Przykładowe prace i zdjęcia z warsztatów...</p>
+      <div class="slider" id="gallery-slider">
+        <!-- Zdjęcia zostaną dodane dynamicznie przez JS -->
+        <button class="slider-btn prev">&#10094;</button>
+        <button class="slider-btn next">&#10095;</button>
+      </div>
     </section>
 
     <section id="oferta" class="content-section">
@@ -143,5 +150,7 @@
   <footer>
     <p>© 2025 Piegus Pottery. Wszelkie prawa zastrzeżone.</p>
   </footer>
+  <!-- Dodano połączenie z plikiem JavaScript -->
+  <script src="assets/script.js"></script>
 </body>
 </html>

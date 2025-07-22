@@ -164,6 +164,123 @@ footer {
   user-select: none;
 }
 
+/* Animacja fade-in dla sekcji */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animacja nagłówka */
+header.slide-down {
+  animation: slideDown 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulsujący CTA */
+.cta.pulse {
+  animation: pulseAnim 0.7s infinite alternate;
+}
+
+@keyframes pulseAnim {
+  from {
+    box-shadow: 0 0 0 0 #d72660;
+    transform: scale(1);
+  }
+  to {
+    box-shadow: 0 0 16px 4px #d72660;
+    transform: scale(1.07);
+  }
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto 24px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(215,38,96,0.12);
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  transition: opacity 0.7s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  position: relative;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffb6d5;
+  color: #d72660;
+  border: none;
+  font-size: 2rem;
+  padding: 0 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
+
+.onas-bg-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 24px auto;
+}
+
+.onas-bg-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(215,38,96,0.12);
+}
+
+.onas-bg-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(249, 247, 241, 0.92); /* Zmieniono tło na jasny beżowy */
+  color: rgba(117, 95, 168, 0.95);
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(215,38,96,0.10);
+}
+
 /* Responsywność */
 @media (max-width: 768px) {
   nav {
@@ -178,9 +295,6 @@ footer {
   }
   .dropdown:hover .dropdown-content {
     display: none;
-  }
-  .dropdown > a::after {
-    content: " ▼";
   }
 }
 
