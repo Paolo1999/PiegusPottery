@@ -281,6 +281,78 @@ header.slide-down {
   box-shadow: 0 2px 8px rgba(215,38,96,0.10);
 }
 
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 28px;
+  margin: 5px auto;
+  background: #b97424;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Mobile nav */
+@media (max-width: 900px) {
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+  }
+  nav#main-nav {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 70vw;
+    max-width: 320px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 32px 32px 32px;
+    gap: 24px;
+    transition: left 0.3s;
+    z-index: 1000;
+  }
+  nav#main-nav.open {
+    left: 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .logo {
+    display: block;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 600px) {
+  nav#main-nav {
+    width: 90vw;
+    max-width: 90vw;
+    padding: 80px 16px 16px 16px;
+  }
+}
+
 /* Responsywność */
 @media (max-width: 768px) {
   nav {
