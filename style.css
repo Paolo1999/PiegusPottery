@@ -2,8 +2,8 @@
 :root {
   --main-blue: #b3d8f7;
   --main-blue-dark: #6fa3d9;
-  --main-purple: #bfa6e7;
-  --main-purple-dark: #8c6fc1;
+  --main-purple: #c76a13;
+  --main-purple-dark: #d88c29;
   --main-white: #f9f7f1;
   --main-sun: #ffe066;
   --main-sun-light: #fff9d6;
@@ -245,8 +245,8 @@ header.slide-down {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #ffb6d5;
-  color: #d72660;
+  background: #c2ad8a;
+  color: #362903;
   border: none;
   font-size: 2rem;
   padding: 0 12px;
@@ -279,7 +279,7 @@ header.slide-down {
   top: 50%;
   transform: translate(-50%, -50%);
   background: rgba(249, 247, 241, 0.92); /* Zmieniono tło na jasny beżowy */
-  color: rgba(117, 95, 168, 0.95);
+  color: rgba(90, 56, 6, 0.95);
   padding: 16px 32px;
   border-radius: 8px;
   font-size: 1.4rem;
