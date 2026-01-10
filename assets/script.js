@@ -73,7 +73,13 @@ const galleryImages = [
   "assets/galeria/photo_2025-07-22_17-45-37.jpg",
   "assets/galeria/photo_2025-07-22_17-45-39.jpg",
   "assets/galeria/photo_2025-07-22_17-45-40.jpg",
-  "assets/galeria/photo_2025-07-22_17-45-42.jpg"
+  "assets/galeria/photo_2025-07-22_17-45-42.jpg",
+  "assets/galeria/photo_2025-12-28_18-47-37.jpg",
+  "assets/galeria/photo_2025-12-28_18-47-40.jpg",
+  "assets/galeria/photo_2025-12-28_18-47-43.jpg",
+  "assets/galeria/photo_2025-12-28_18-47-44.jpg",
+  "assets/galeria/photo_2025-12-28_18-47-46.jpg",
+  "assets/galeria/photo_2025-12-28_18-47-49.jpg",
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
