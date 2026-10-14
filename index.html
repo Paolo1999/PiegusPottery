@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Piegus Pottery</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="assets/fav.jpg" />
 </head>
@@ -46,9 +46,76 @@
 
   <main>
     <section id="o-nas" class="content-section">
-      <div class="onas-bg-container">
-        <img src="assets/background.jpg" alt="Pracownia ceramiczna" class="onas-bg-img">
-        <div class="onas-bg-text">Pracownia ceramiczna Piegus Pottery</div>
+      <div class="hero" id="hero-slider" aria-roledescription="karuzela" aria-label="Najważniejsze informacje">
+        <div class="hero-track">
+          <article class="hero-slide active" aria-roledescription="slajd" aria-label="1 z 7">
+            <div class="hero-text">
+              <h2 class="hero-title">pracownia <em>ceramiczna</em></h2>
+              <p class="hero-desc">Kameralna przestrzeń w sercu Wrocławia, w której odkryjesz magię gliny i stworzysz coś wyjątkowego.</p>
+              <p class="hero-subtitle">WROCŁAW · UL. GŁOWACKIEGO 20</p>
+              <a href="#kontakt" class="hero-btn">SKONTAKTUJ SIĘ</a>
+            </div>
+            <img class="hero-img" src="assets/galeria/slider-jeden.jpg" alt="Stoisko Piegus Pottery z ręcznie robioną ceramiką" />
+          </article>
+
+          <article class="hero-slide" aria-roledescription="slajd" aria-label="2 z 7">
+            <div class="hero-text">
+              <h2 class="hero-title">lepienie <em>ręczne</em></h2>
+              <p class="hero-subtitle">WARSZTATY DLA DZIECI I DOROSŁYCH</p>
+              <a href="#warsztaty-lepienie" class="hero-btn">ZAPISZ SIĘ</a>
+            </div>
+            <img class="hero-img" src="assets/galeria/slider-dwa.jpg" alt="Lepienie kubka z gliny na warsztatach" loading="lazy" />
+          </article>
+
+          <article class="hero-slide" aria-roledescription="slajd" aria-label="3 z 7">
+            <div class="hero-text">
+              <h2 class="hero-title">koło <em>garncarskie</em></h2>
+              <p class="hero-subtitle">ZAJĘCIA I KURS ZAAWANSOWANY</p>
+              <a href="#warsztaty-kolo" class="hero-btn">SPRAWDŹ TERMINY</a>
+            </div>
+            <img class="hero-img" src="assets/galeria/slider-trzy.jpg" alt="Uczestniczka zajęć na kole garncarskim" loading="lazy" />
+          </article>
+
+          <article class="hero-slide" aria-roledescription="slajd" aria-label="4 z 7">
+            <div class="hero-text">
+              <h2 class="hero-title">szkliwienie <em>ceramiki</em></h2>
+              <p class="hero-subtitle">NADAJ PRACOM KOLOR</p>
+              <a href="#warsztaty-szkliwienie" class="hero-btn">DOWIEDZ SIĘ WIĘCEJ</a>
+            </div>
+            <img class="hero-img" src="assets/galeria/slider-cztery.jpg" alt="Malowanie kubka farbą podszkliwną" loading="lazy" />
+          </article>
+
+          <article class="hero-slide" aria-roledescription="slajd" aria-label="5 z 7">
+            <div class="hero-text">
+              <h2 class="hero-title">wypały <em>ceramiki</em></h2>
+              <p class="hero-subtitle">BISKWIT 950°C · 1050°C · 1250°C</p>
+              <a href="#wypaly" class="hero-btn">ZOBACZ CENNIK</a>
+            </div>
+            <img class="hero-img" src="assets/galeria/slider-piec.jpg" alt="Piec ceramiczny i regał z pracami przed wypałem" loading="lazy" />
+          </article>
+
+          <article class="hero-slide" aria-roledescription="slajd" aria-label="6 z 7">
+            <div class="hero-text">
+              <h2 class="hero-title">voucher <em>na prezent</em></h2>
+              <p class="hero-subtitle">ZAJĘCIA I PERSONALIZOWANY KUBEK</p>
+              <a href="#vouchery" class="hero-btn">KUP VOUCHER</a>
+            </div>
+            <img class="hero-img" src="assets/galeria/slider-szesc.jpg" alt="Karty podarunkowe na zajęcia ceramiczne" loading="lazy" />
+          </article>
+
+          <article class="hero-slide" aria-roledescription="slajd" aria-label="7 z 7">
+            <div class="hero-text">
+              <h2 class="hero-title">ceramika <em>ręcznie robiona</em></h2>
+              <p class="hero-subtitle">NASZE WYROBY NA ETSY</p>
+              <a href="https://pieguspottery.etsy.com" target="_blank" rel="noopener" class="hero-btn">KUP TERAZ</a>
+            </div>
+            <img class="hero-img" src="assets/galeria/slider-siedem.jpg" alt="Ręcznie robiony kubek z kotem w oknie" loading="lazy" />
+          </article>
+        </div>
+
+        <button class="hero-arrow prev" aria-label="Poprzedni slajd">&#8249;</button>
+        <button class="hero-arrow next" aria-label="Następny slajd">&#8250;</button>
+        <div class="hero-dots"></div>
       </div>
       <p>
         Witamy w Piegus Pottery – miejscu, gdzie pasja do ceramiki łączy się z radością tworzenia. Nasza pracownia w sercu Wrocławia to przestrzeń dla każdego, kto chce odkryć magię gliny i stworzyć coś wyjątkowego.
@@ -243,7 +310,7 @@
       </div>
       </section>
 
-    <section id="oferta" class="content-section">
+    <section id="vouchery" class="content-section">
       <h2>Vouchery</h2>
       <p>W naszej pracowni można zakupić vouchery i karty podarunkowe na zajęcia i spersonalizowany kubeczek.
         Zamówienia na inne wyroby ceramiczne również są przyjmowane. Wystarczy skontaktować się z nami przez email lub telefonicznie.</p>
