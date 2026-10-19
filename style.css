@@ -523,6 +523,10 @@ header.slide-down {
     width: 70vw;
     max-width: 320px;
     height: 100vh;
+    height: 100dvh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-wrap: nowrap;
     background: var(--bg);
     border-right: 1px solid var(--line);
     flex-direction: column;
@@ -535,6 +539,22 @@ header.slide-down {
   }
   nav#main-nav.open {
     left: 0;
+  }
+  .dropdown-content,
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: static;
+    min-width: 0;
+    margin: 8px 0 0;
+    border: none;
+    border-left: 1px solid var(--line);
+    background: none;
+  }
+  .dropdown-content a {
+    padding: 8px 0 8px 16px;
+  }
+  .dropdown-content a:hover {
+    background: none;
   }
   .hamburger {
     display: flex;
@@ -558,14 +578,6 @@ header.slide-down {
   nav {
     flex-direction: column;
     gap: 10px;
-  }
-  .dropdown-content {
-    position: static;
-    border: none;
-    margin: 0;
-  }
-  .dropdown:hover .dropdown-content {
-    display: none;
   }
 }
 
@@ -629,38 +641,13 @@ table tbody tr:hover {
 }
 
 @media screen and (max-width: 600px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
+  table {
+    font-size: 0.95rem;
   }
 
-  table thead tr {
-    display: none;
-  }
-
-  table tr {
-    margin-bottom: 12px;
-    border-top: 1px solid var(--line);
-  }
-
-  table td,
-  table td:last-child {
-    text-align: right;
-    white-space: normal;
-    padding-left: 50%;
-    position: relative;
-  }
-
-  table td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 16px;
-    width: 45%;
-    text-align: left;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
+  table th,
+  table td {
+    padding: 10px 12px;
   }
 }
 
